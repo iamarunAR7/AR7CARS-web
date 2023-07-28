@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="./dist/output.css" rel="stylesheet" />
+    <div class="text-center font-extrabold py-4 shadow-2xl ">
+        <span class="text-slate-600 font-extrabold text-3xl">AR7 CARS</span>
+    </div>
+    
+</head>
+<body class="w-auto h-auto " style="background-image: url('images/bmw.jpg');">
+   
+    <div class="flex items-center justify-center  hover:backdrop-blur-sm w-1/2 h-1/2 ">
+        <div class="relative flex flex-col space-y-8 shadow-2xl rounded-2xl md:flex-row md:space-y-0 items-center">
+            <div class="flex flex-col justify-center p-8 md:p-14">
+                    <span class="mb-3 text-4xl font-bold text-cyan-900"> HELLO Welcome !</span>
+                    <span class="font-thin text-cyan-600 py-7">welcome back , please enter your login credential!</span>
+                    <div class="py-4">
+                     <span class="mb-2 text-md text-cyan-400   " >Email -(use email as abc@gmail.com)</span> 
+                     <input type="email" class="w-full p-2 border bg-slate-500 hover:bg-slate-200"  id="Email"> 
+                     <div class="py-2"></div>
+                     <span class="mb-2 text-md text-cyan-400">Password-(use Password as 12345)</span>  
+                     <input type="" class="bg-slate-500 w-full p-2 hover:bg-slate-200 " name="" id="Password">
+                     <div class="py-4"></div>
+                     <div class="">
+                        <input type="checkbox" class="px-3" >
+                        <span class="text-slate-500 text-sm"> Remember me for 30 Days</span>
+
+                     </div>
+
+                     <div class="py-2"></div>
+                     <div class=" text-center">
+ 
+ 
+    <button class=" shadow-2xl font-bold bg-slate-500 px-4 rounded-2xl py-2 hover:bg-slate-200" onclick="val()">Submit</button>
+                     </div>
+                     <script>
+                       
+                       
+                       function val(){
+                        var email= document.getElementById("Email").value;
+                       var pass= document.getElementById("Password").value;
+                        if( email=='abc@gmail.com'  && pass=='12345'){
+                                window.location.assign("main.html")
+                        }
+                        else{
+                            alert("invalid credential")
+                        }
+                    }
+                     </script>
+                     
+                    </div>
+            </div>
+        </div>
+    </div>
+    
+<div></div>
+    
+</body>
+</html>
